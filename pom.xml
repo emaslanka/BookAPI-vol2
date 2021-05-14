@@ -75,10 +75,12 @@
         </dependency>
 
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.3.3.RELEASE</version>
         </dependency>
+
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
@@ -135,6 +137,14 @@
             <version>1.2</version>
 
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.3.7</version>
+            <scope>test</scope>
+        </dependency>
+
 
 
 

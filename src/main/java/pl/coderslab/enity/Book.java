@@ -1,12 +1,9 @@
 package pl.coderslab.enity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
-
+@Table(name = "books")
 public class Book {
 
     @Id
@@ -79,4 +76,15 @@ public class Book {
         this.type = type;
     }
 
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", isbn='" + isbn + '\'' +
+                ", title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", publisher='" + publisher + '\'' +
+                ", type='" + type + '\'' +
+                '}';
+    }
 }
